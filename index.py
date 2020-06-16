@@ -1,7 +1,6 @@
 import json
 import datetime
 
-
 def handler(event, context):
     n = int(0)
     triangular = int(0)
@@ -22,6 +21,7 @@ def handler(event, context):
         'numero':n,
         'fibonacci':lista,
         'triangular':triangular,
+        'output': 'Hello World',
         'timestamp': datetime.datetime.utcnow().isoformat()
     }
     
